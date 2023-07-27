@@ -1,0 +1,13 @@
+---
+namespace: composabilitylabs
+abi: "./counter-abi.json"
+identifier: counter_indexer
+fuel_client: ~
+graphql_schema: schema/counter_indexer.schema.graphql
+module:
+  wasm: target/wasm32-unknown-unknown/release/counter_indexer.wasm
+metrics: ~
+contract_id: fuel1m95d3jgu3aaykz0gd76sszsuhx7d3vqk7fmyw50peyqd903qkrxq67czu2
+start_block: 1647684
+end_block: ~
+resumable: true

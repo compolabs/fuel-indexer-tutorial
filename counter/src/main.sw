@@ -23,15 +23,16 @@ struct IncrementEvent {
 impl Counter for Contract { 
     #[storage(read)]
     fn count() -> u64 {
-        storage.counter.try_read().unwrap_or(0)
+        storage.counter//.try_read().unwrap_or(0)
     }
 
     #[storage(read, write)]
     fn increment() {
-        let last_counter = storage.counter.try_read().unwrap_or(0);
+        let last_counter = storage.counter;//.try_read().unwrap_or(0);
         let new_counter = last_counter + 1;
         
-        storage.counter.write(new_counter);
+        // storage.counter.write(new_counter);
+        storage.counter = new_counter;
         log(IncrementEvent{
             last_counter,
             new_counter,

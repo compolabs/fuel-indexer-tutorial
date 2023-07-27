@@ -1,0 +1,6 @@
+type Increment {
+    id: ID!
+    last_counter: UInt8!
+    new_counter: UInt8!
+    timestamp: UInt8!
+}
