@@ -85,4 +85,4 @@ forc index remove
 forc index deploy
 ```
 
-Additionally, the GraphQL playground is available at the URL: [http://localhost:29987/api/playground/composabilitylabs/spark_indexer](http://localhost:29987/api/playground/composabilitylabs/spark_indexer)
+Additionally, the GraphQL playground is available at the URL: [http://localhost:29987/api/playground/composabilitylabs/counter_indexer](http://localhost:29987/api/playground/composabilitylabs/counter_indexer)
