@@ -1,5 +1,8 @@
 # How to Index Data on the Fuel Network using Fuel Indexer
 
+ℹ️ If you have any questions you can ask them in our telegram chat for developers: 
+https://t.me/compolabs_devs.
+
 Welcome to an advanced tutorial by Composability Labs on how to index events on the blockchain fuel.network using the fuel indexer.
 
 You can find the source code for this tutorial here: [fuel-indexer-tutorial](https://github.com/compolabs/fuel-indexer-tutorial/tree/master)
