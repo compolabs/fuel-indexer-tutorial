@@ -7,6 +7,8 @@ Welcome to an advanced tutorial by Composability Labs on how to index events on 
 
 You can find the source code for this tutorial here: [fuel-indexer-tutorial](https://github.com/compolabs/fuel-indexer-tutorial/tree/master)
 
+⚠️ Before going through this tutorial, make sure you have the required dependencies installed
+
 ⚠️ Before proceeding, please ensure that you are using the beta-3 version of the toolchain. You can switch your toolchain to beta-3 using the following commands:
 
 ```bash
@@ -20,6 +22,7 @@ fuelup default beta-3
 1. Create a test counter project:
 ```bash
 forc new counter    
+cd counter
 cargo generate --init fuellabs/sway templates/sway-test-rs --name counter
 ```
 
@@ -37,8 +40,8 @@ Example: [.env.example](https://github.com/compolabs/fuel-indexer-tutorial/blob/
 
 Done! The code is ready. Now let's deploy our contracts. Alternatively, you can use the already deployed contract address on beta-3:
 
-0x.. Address: `0xd968d8c91c8f7a4b09e86fb5080a1cb9bcd8b016f2764751e1c900d2be20b0cc`
-fuel.. Address: `fuel1m95d3jgu3aaykz0gd76sszsuhx7d3vqk7fmyw50peyqd903qkrxq67czu2`
+- 0x..   Address: `0xd968d8c91c8f7a4b09e86fb5080a1cb9bcd8b016f2764751e1c900d2be20b0cc`
+- fuel.. Address: `fuel1m95d3jgu3aaykz0gd76sszsuhx7d3vqk7fmyw50peyqd903qkrxq67czu2`
 
 ---
 ## Indexer Instance Test Project
@@ -82,4 +85,4 @@ forc index remove
 forc index deploy
 ```
 
-Additionally, the GraphQL playground is available at the URL: [http://localhost:29987/api/playground/compolabs/spark_indexer](http://localhost:29987/api/playground/compolabs/spark_indexer)
+Additionally, the GraphQL playground is available at the URL: [http://localhost:29987/api/playground/composabilitylabs/spark_indexer](http://localhost:29987/api/playground/composabilitylabs/spark_indexer)
