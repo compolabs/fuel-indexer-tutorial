@@ -1,4 +1,6 @@
-# How to Index Data on the Fuel Network using Fuel Indexer
+# How to Index Data on the Fuel Network using Fuel Indexer 
+
+Repository: https://github.com/compolabs/fuel-indexer-tutorial
 
 ℹ️ If you have any questions you can ask them in our telegram chat for developers: 
 https://t.me/compolabs_devs.
@@ -8,14 +10,6 @@ Welcome to an advanced tutorial by Composability Labs on how to index events on 
 You can find the source code for this tutorial here: [fuel-indexer-tutorial](https://github.com/compolabs/fuel-indexer-tutorial/tree/master)
 
 ⚠️ Before going through this tutorial, make sure you have the required dependencies installed
-
-⚠️ Before proceeding, please ensure that you are using the beta-3 version of the toolchain. You can switch your toolchain to beta-3 using the following commands:
-
-```bash
-fuelup update
-fuelup toolchain install beta-3   
-fuelup default beta-3
-```
 
 ## Counter Contract Test Project
 
@@ -37,6 +31,16 @@ Example: [.env.example](https://github.com/compolabs/fuel-indexer-tutorial/blob/
 5. The test code can be found in `tests/harness.rs`: [harness.rs](https://github.com/compolabs/fuel-indexer-tutorial/blob/master/counter/tests/harness.rs). This test contains both local node and testnet tests, with the latter used to generate events.
 
 6. Build the contract using `forc build`.
+
+⚠️ Before building of contract, please ensure that you are using the beta-3 version of the toolchain. You can switch your toolchain to beta-3 using the following commands:
+
+```bash
+fuelup update
+fuelup toolchain install beta-3   
+fuelup default beta-3
+```
+
+to come back to `latest` you can type `fuelup default latest`
 
 Done! The code is ready. Now let's deploy our contracts. Alternatively, you can use the already deployed contract address on beta-3:
 
